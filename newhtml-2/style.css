@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    
+}
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* header */
+
+header{
+    width: 100%;
+    background-image: linear-gradient(20deg,rgba(0, 0, 0, 0.30),rgba(8, 6, 2, 0.50)), url('img/restau.jpg');
+    background-size: cover;
+    height: 80vh;
+    object-fit: cover;
+    background-attachment: fixed;
+    background-position:  center 0 ;
+
+}
+
+header .contenedor{
+    position: relative;
+    
+    height: 500px;
+}
+header .menu{
+    width: 100%;
+    text-align: right;
+}
+header .menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    margin: 40px 20px;
+    position: relative;
+
+}
+header .menu a:hover{
+    
+    text-decoration: underline;
+}
+header .texto{
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top:-52px;
+
+}
+header .texto .nombre{
+    font-size: 50px;
+    font-weight: 600;
+}
+header .texto .nombre span{
+    font-weight: 30;
+    background: white;
+    color: #000;
+    padding: 3px 10px;
+    border-radius: 10px;
+
+}
+header .texto h3{
+    font-weight: 300 ;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+/* acerca de */
+
+.main .acerca-de .contenedor{
+    overflow: visible;
+    position: relative;
+}
+.main .acerca-de .contenedor .foto{
+    width: 70%;
+    position: absolute;
+    height: 400px;
+    left: 0;
+    top: -50px;
+    z-index: 0;
+    box-shadow: 0px 0px 10px black;
+}
+
+
+.main .acerca-de .contenedor .foto video{
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+    /* background-image: linear-gradient(20deg,rgba(0, 0, 0, 0.10),rgba(8, 6, 2, 0.10)), url('img/michael.jpg');
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    vertical-align: top; */
+}
+.main .acerca-de article{
+    background: #fff;
+    padding: 40px;
+    width: 50%;
+    position: relative;
+    top: 150px;
+    float: right;
+    z-index: 1;
+    box-shadow: 0px 0px 10px black;
+}
+.main .acerca-de article h3{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.main .acerca-de article p{
+    margin-bottom: 15px;
+    
+    line-height: 20px;
+}
+.main .menu{
+    padding-top:570px ;
+    margin-bottom: 50px;
+}
+.main .menu .titulo{
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.main .menu .contenedor-menu, .main .menu .contenedor-menu2{
+    border: solid #000 1px;
+    background: transparent;
+    padding: 10px;
+    overflow: hidden;
+}
+.main .menu article{
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+.main .menu .categoria{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.main .menu .platillo{
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: dotted 4px #000;
+    overflow: hidden;
+}
+.main .menu .nombre{
+    font-size: 20px;
+    margin-bottom: 15px;
+    float: left;
+}
+.main .menu .precio{
+    font-size: 20px;
+    margin-bottom: 15px;
+    float: right;
+}
+.main .menu article .descripcion{
+    font-size: 16px;
+    color: #676767;
+    clear: both;
+}
+
+/* galeria */
+
+.main .galeria{
+    overflow: hidden;
+}
+.main .galeria .foto{
+    width: 25%;
+    height: 270px;
+    float: left;
+    border: solid 3px #fff;
+    
+    
+}
+.main .galeria .uno{
+    background-image: url('img/albert.jpg');
+   background-size: cover;
+   background-position: center;
+    
+}
+
+.main .galeria .dos{
+    background-image: url('img/1.jpg');
+   background-size: cover;
+   background-position: center;
+    
+}
+
+.main .galeria .tres{
+    background-image: url('img/3.jpg');
+   background-size: cover;
+   background-position: center;
+    
+}
+.main .galeria .cuatro{
+    background-image: url('img/4.jpg');
+   background-size: cover;
+   background-position: center;
+    
+}
+
+.main .galeria .cinco{
+    background-image: url('img/2.jpg');
+   background-size: cover;
+   background-position: center;
+    
+}
+.main .galeria .seis{
+    background-image: url('img/5.jpg');
+   background-size: cover;
+   background-position: center;
+    
+}
+.main .galeria .siete{
+    background-image: url('img/6.jpg');
+   background-size: cover;
+   background-position: center;
+    
+}
+
+.main .galeria .ocho{
+    background-image: url('img/7.jpg');
+   background-size: cover;
+   background-position: center;
+    
+}
+
+.main .ubicacion{
+    padding: 60px 0;
+    overflow: hidden;
+}
+.main .ubicacion .titulo{
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.main .ubicacion .direccion{
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+.main .ubicacion .horarios{
+    text-align: right;
+    overflow: hidden;
+    width: 50%;
+    float: right;
+}
+.main .ubicacion .direccion .calle{
+    margin-bottom: 15px;
+}
+.main .ubicacion .horarios h4{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.main .ubicacion .horarios .entre-semana, .main .ubicacion .horarios .fin-semana{
+width: 50%;
+float: left;
+text-align: center;
+}
+.main .mapa{
+    width: 100%;
+    overflow: hidden;
+}
+.main .mapa iframe{
+    width: 100%;
+    max-height: 600px;
+}
+footer{
+    background: #000;
+    text-align: center;
+    padding: 15px 0;
+    color: #fff;
+}
+
+/* responsibe */
+
+@media screen and (max-width: 800px) {
+    header .contenedor{
+        position: static;
+        height: auto;
+    }
+    header .texto{
+        position: static;
+        margin: 100px 0;
+    }
+    header .menu{
+        text-align: center;
+        
+    }
+    header .menu a{
+        margin: 10px 20px;
+        font-size: 16px;
+    }
+    header .texto .nombre{
+        font-size: 30px;
+    }
+    header .texto h3{
+        font-size: 18px;
+    }
+    .main .acerca-de .contenedor .foto{
+        width: 100%;
+        height: 320px;
+        position: relative;
+    }
+    .main .acerca-de article{
+        position: relative;
+        width: 100%;
+        top: -50px;
+        transform: translate(0px 0);
+    }
+    .main .menu{
+        padding-top: 300px;
+    } 
+    .main .menu article{
+        width: 100%;
+    }
+    .main .galeria .foto{
+        width: 50%;
+    }
+    .main .mapa{
+        width: 80%;
+        margin: auto;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .main .acerca-de article h3{
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+    header .menu a{
+        font-size: 15px;
+        margin: 5px 2px;
+    }
+    .main .menu article .nombre,.main .menu article .precio{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .main .ubicacion .direccion{
+        margin-bottom: 15px;
+    }
+    .main .ubicacion .direccion ,.main .ubicacion .horarios{
+        width: 100%;
+        
+        text-align: center;
+    }
+}
